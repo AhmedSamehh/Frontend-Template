@@ -1,0 +1,373 @@
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 
+{
+    font-family: 'Poppins', sans-serif;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+.btn
+{
+    position: relative;
+    padding: 0 30px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.04em;
+    overflow: hidden;
+}
+.home
+{
+    position: relative;
+}
+.home .dark
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:  rgba(31, 31, 31, 0.55);
+    width: 100%;
+    z-index: 1;
+}
+.home .carousel-item
+{
+    position: relative;
+}
+.home .carousel-caption
+{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    z-index: 2;
+}
+.home .carousel-caption h1
+{
+    font-size: 55;
+    font-weight: 700;
+}
+.home .carousel-caption h3
+{
+    font-size: 18px;
+    font-weight: 400;
+}
+.home .carousel-caption button
+{
+    font-size: 18;
+
+}
+
+.intro h6
+{
+    font-weight: 700;
+    font-size: 16;
+    text-transform: uppercase;
+}
+.intro p
+{
+    box-sizing: border-box;
+    color: rgb(120, 120, 120);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 30px;
+}
+.intro .mybtn
+{
+    border-radius: 0;
+}
+.intro span:after
+{
+    content: " |";
+    color: #00c3da;
+    animation: typing 6s; 
+    animation-iteration-count: infinite;
+}
+.about .items
+{
+    box-sizing: border-box;
+    padding: 20 0;
+}
+.about .items a
+{
+    font-size: 13;
+    font-weight: 500;
+}
+.team h2
+{
+    padding-top: 20;
+    font-weight: 800;
+    font-size: 38px;
+}
+.team h4
+{
+    font-size: 18px;
+    font-weight: 400;
+    color: dimgray;
+    padding-bottom: 20;
+}
+.team .member
+{
+    position:relative; 
+    overflow: hidden;
+}
+.team .member .blur
+{
+    position: absolute;
+    top: 30;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.team .member .blur:hover
+{
+    top: 0;
+    background-color: rgba(0, 195, 218, 0.9);
+}
+.team .member .iconn
+{
+    font-size: 14;
+    position: absolute;
+    left: 15;
+    top: 15;
+    display: none;
+}
+.team .member .blur:hover>.iconn
+{
+    display: block;
+}
+.team .member .data 
+{
+    font-weight: 700;
+    font-size: 12;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    display: none;
+}
+.team .member .blur:hover>.data
+{
+    display: block;
+}
+.work h2
+{
+    padding-top: 40;
+    font-size: 38px;
+    font-weight: 700;
+}
+.work .my-line
+{
+    height: 2px;
+    width: 5%;
+    background-color: black;
+    margin: auto;
+}
+.work .my-line:hover
+{
+    width: 9%;
+}
+.work .single
+{
+    position: relative;
+}
+.work .single .kart
+{
+    position: absolute;
+    bottom: 0;
+    right: 40;
+    left: 40;
+    text-align: center;
+    padding: 25;
+    background-color: white;
+    opacity: 0;
+}
+.work .single:hover
+{
+    transform: scale(1.05);
+}
+.work .single:hover>.kart
+{
+    bottom: 35;
+    opacity: 1
+}
+.prices
+{
+    background-color: #f7f7f7;
+}
+.prices h2
+{
+    padding-top: 20;
+    font-weight: 800;
+    font-size: 45px;
+}
+.prices h4
+{
+    font-size: 18px;
+    font-weight: 400;
+    color: dimgray;
+    padding-bottom: 20;
+}
+.prices .price 
+{
+    text-align:left; 
+    background-color: white;
+    padding: 20;
+    margin-top: 20;
+    box-shadow: 0px 0px 21px -3px rgba(222,222,222,0.85);
+}
+.prices .price h3
+{
+    font-size: 16;
+    padding: 12 0;
+}
+.prices .price span
+{
+    font-size: 14;
+    font-weight:200 
+}
+.best
+{
+    position: relative;
+    transform: scaleY(1.09);
+}
+.best .badge
+{
+    position: absolute;
+    top: 5%;
+    right: 10%;   
+}
+.testimonial 
+{
+    box-sizing: border-box;
+    padding: 50;
+    background-color: #f7f7f7;
+}
+.testimonial .all
+{
+    background-color: white;
+    padding: 50;
+    border-radius: 3%;
+    box-shadow: 0px 0px 21px -3px rgba(222,222,222,0.85);
+}
+.maps .touch h2
+{
+    padding-top: 20;
+    font-weight: 800;
+    font-size: 45px;
+}
+.maps .touch h4
+{
+    font-size: 18px;
+    font-weight: 400;
+    color: dimgray;
+    padding-bottom: 20;
+}
+.my-footer 
+{
+    background-image: url("../images/wm.jpg");
+    background-size: contain;
+}
+.my-footer p
+{
+    font-size: 14px;
+}
+.my-footer .par-blue:hover
+{
+    color:#00bed7 ;
+    cursor: pointer;
+    font-weight: 500
+}
+.my-footer .a-blue
+{
+    letter-spacing: 0.7px;
+    display: block;
+    float: left;
+    font-size: 10px;
+    text-decoration: none;
+    color: #6b7272;
+    font-weight: 600;
+    border: solid 1px #858585;
+    padding: 8 10;
+    margin: 0 5 5 0;
+}
+.my-footer .a-blue:hover
+{
+    background-color: #00bed7;
+    border: solid 1px #00bed7;
+    color: white;
+}
+.my-footer-info
+{
+    background-color: #f6f6f6;
+}
+.my-footer-info .links i
+{
+    font-size: 21px;
+    color: gray;
+}
+.my-footer-info .blue:hover
+{
+    color: blue;
+}
+.my-footer-info .lbny:hover
+{
+    color: #24acf2;
+}
+.my-footer-info .red:hover
+{
+    color: darkred;
+}
+@keyframes typing
+{
+    0%{content: " A| "}
+    3%{content: " Ap| "}
+    5%{content: " App| "}
+    9%{content: " Apps| "}
+    11%{content: " App| "}
+    14%{content: " Ap| "}
+    16%{content: " A| "}
+    19%{content: " | "}
+    22%{content: " W| "}
+    24%{content: " We| "}
+    27%{content: " Web| "}
+    30%{content: " Webs| "}
+    33%{content: " Websi| "}
+    35%{content: " Websit| "}
+    38%{content: " Website| "}
+    40%{content: " Websites| "}
+    42%{content: " Website| "}
+    44%{content: " Websit| "}
+    47%{content: " Websi| "}
+    50%{content: " Webs| "}
+    52%{content: " Web| "}
+    54%{content: " We| "}
+    57%{content: " W| "}
+    59%{content: " | "}
+    62%{content: " S| "}
+    65%{content: " Se| "}
+    67%{content: " Ser| "}
+    70%{content: " Serv| "}
+    73%{content: " Servi| "}
+    75%{content: " Servic| "}
+    78%{content: " Service| "}
+    80%{content: " Services| "}
+    83%{content: " Service| "}
+    85%{content: " Servic| "}
+    88%{content: " Servi| "}
+    90%{content: " Serv| "}
+    93%{content: " Ser| "}
+    95{content: " Se| "}
+    98%{content: " S| "}
+    100%{content: " | "}
+}
